@@ -3,6 +3,7 @@
 $r=$_GET['r'];
 $g=$_GET['g'];
 $b=$_GET['b'];
+$colorpicker=$_GET['colorpicker'];
 
 $output = shell_exec("pigpiod");
 $output = shell_exec("pigs p 17 0");
@@ -28,8 +29,37 @@ if($r != "" AND $g != "" AND $b != "")
 </head>
 <body>
 
-<canvas width="730" height="730" id="canvas_picker"></canvas>
+<p>
+<a href="led.php?r=255&g=255&b=255">LED's anschalten</a>
+<a href="led.php?r=0&g=0&b=0">LED's ausschalten</a>
+</p>
 
+<p>
+<script>
+function show(id) {
+    if(document.getElementById) {
+        var mydiv = document.getElementById(id);
+        mydiv.style.display = (mydiv.style.display=='block'?'none':'block');
+    }
+}
+</script>
+<a href="" onclick="javascript:show('divText'); return false">
+Colorpicker einblenden</a>
+
+<?php
+
+if($colorpicker == "active") {
+echo("
+<div style='display: block' id='divText'>
+");
+}
+else {
+echo("
+<div style='display: none' id='divText'>
+");
+}
+?>
+<canvas width="730" height="730" id="canvas_picker"></canvas>
 <script type="text/javascript">
 	var canvas = document.getElementById('canvas_picker').getContext('2d');
 
@@ -61,9 +91,34 @@ if($r != "" AND $g != "" AND $b != "")
 	  var B = img_data[2];  var rgb = R + ',' + G + ',' + B;
 	  // convert RGB to HEX
 	  var hex = rgbToHex(R,G,B);
-	  window.location.href = "index.php?r=" + R + "&g=" + G + "&b=" + B;
+	  window.location.href = "led.php?r=" + R + "&g=" + G + "&b=" + B + "&colorpicker=active";
 	  });
 </script>
+</p>
+</div>
+
+<p>
+<a href="" onclick="javascript:show('divTexta'); return false">
+Farben manuell bestimmen</a>
+
+<div style='display: none' id='divTexta'>
+
+ <form action="led.php" method="get">
+Rot:
+<?php
+echo("
+  <input type='range' name='r' min='0' max='255' value='$r'>
+Grün:
+<input type='range' name='g' min='0' max='255' value='$g'>
+Blau:
+<input type='range' name='b' min='0' max='255' value='$b'><br>
+<input type='submit' value='Farbe setzen'>
+");
+?>
+</form>
+</p>
+</div>
 
 </body>
 </html>
+

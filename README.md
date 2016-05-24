@@ -2,16 +2,16 @@
 
 ledcontrol ist ein Webinterface mit dem ihr die LED Strips am Raspberry Pi fernsteuern könnt
 
-https://blog.mattionline.de/raspberry-pi-led-strip-steuern/
+Hardwareanleitung: https://blog.mattionline.de/raspberry-pi-led-strip-steuern/
 
 Voraussetzung ist pigpio
 
-Ein color wheel könnt ihr euch dort aussuchen:
+Colorwheel Quelle:
+https://s-media-cache-ak0.pinimg.com/736x/5f/95/12/5f9512ddacc57ad13215983e9020ae4f.jpg
+https://de.pinterest.com/halleyanne/journalist/ 
 
-https://www.google.de/search?q=color+wheel&hl=de&biw=1855&bih=953&tbs=simg:CAQSuQEatgELELCMpwgaYgpgCAMSKL4CvQKDCdES4gizHaEJ8QbPEsYD_1zPdKP0zmSmhNMc3oDe4J50puigaMPgUmCTsR1Ong1yED_1NB0q9MFNFyjmoClBuG0UZvzqjh1f4kDahcPvheogsb1vs7-CADDAsQjq7-CBoKCggIARIERfhoewwLEJ3twQkaLwoICgZjaXJjbGUKCAoGc3BoZXJlCggKBm9yYW5nZQoHCgVwb2ludAoGCgRiYWxsDA,isz:ex,iszw:730,iszh:730&tbm=isch&source=lnt
-
-Danach als image.jpg speichern
-
-Quelle des color picker scripts, welches ich verwendet habe:
-
+Quelle des color picker scripts:
 http://www.webdesignerdepot.com/2013/03/how-to-create-a-color-picker-with-html5-canvas/
+
+Quelle Div einblenden:
+http://www.top-side.de/codeschnipsel/13-div-per-klick-einblenden-und-ausblenden.html
