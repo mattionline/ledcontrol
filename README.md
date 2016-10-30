@@ -1,4 +1,4 @@
-# ledcontrol
+# raspberry pi led strip webinterface - ledcontrol
 
 ledcontrol ist ein Webinterface mit dem ihr die LED Strips am Raspberry Pi fernsteuern könnt
 
