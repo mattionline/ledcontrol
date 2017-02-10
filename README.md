@@ -15,3 +15,5 @@ http://www.webdesignerdepot.com/2013/03/how-to-create-a-color-picker-with-html5-
 
 Quelle Div einblenden:
 http://www.top-side.de/codeschnipsel/13-div-per-klick-einblenden-und-ausblenden.html
+
+Youtube Demo: https://www.youtube.com/watch?v=Lf_W2YIVZUA
