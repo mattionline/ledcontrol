@@ -8,7 +8,12 @@ Youtube Demo: https://www.youtube.com/watch?v=rfKjD2ViD-4
 
 Voraussetzung ist pigpio
 
-
+.
+.
+.
+.
+.
+.
 
 Colorwheel Quelle:
 https://s-media-cache-ak0.pinimg.com/736x/5f/95/12/5f9512ddacc57ad13215983e9020ae4f.jpg
