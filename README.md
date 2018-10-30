@@ -2,7 +2,7 @@
 
 ledcontrol ist ein Webinterface mit dem ihr die LED Strips am Raspberry Pi fernsteuern könnt
 
-Hardwareanleitung: https://blog.mattionline.de/raspberry-pi-led-strip-steuern/
+Hardwareanleitung: https://mattionline.de/raspberry-pi-led-strip-steuern/
 
 Youtube Demo: https://www.youtube.com/watch?v=rfKjD2ViD-4
 
